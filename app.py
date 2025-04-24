@@ -23,7 +23,7 @@ app.config['MAIL_PORT'] = int(os.getenv('MAIL_PORT', 587))  # Load from .env
 app.config['MAIL_USE_TLS'] = os.getenv('MAIL_USE_TLS', 'True') == 'True'  # Load from .env
 app.config['MAIL_USERNAME'] = os.getenv('MAIL_USERNAME')  # Load from .env
 app.config['MAIL_PASSWORD'] = os.getenv('MAIL_PASSWORD')  # Load from .env
-app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')  # Load from .env
+app.config['MAIL_DEFAULT_SENDER'] = os.getenv('MAIL_DEFAULT_SENDER')  # Add this line
 
 db = SQLAlchemy(app)
 mail = Mail(app)
